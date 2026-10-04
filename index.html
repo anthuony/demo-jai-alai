@@ -22,11 +22,12 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#menu">Menú</a>
       <a href="#galeria">Galería</a>
+      <a href="#highlight">#Highlight</a>
       <a href="#visitanos">Visítanos</a>
     </nav>
     <div class="header-actions">
       <a class="btn btn-ghost desktop-only" href="https://www.instagram.com/jaialai_restaurant" target="_blank" rel="noreferrer">Instagram</a>
-      <a class="btn btn-gold desktop-only" href="https://wa.me/584249372501?text=Hola%20Jai%20Alai%2C%20quisiera%20consultar%20sobre%20delivery." target="_blank" rel="noreferrer">Pedir por delivery</a>
+      <button class="cart-trigger desktop-only" type="button" data-open-cart aria-label="Abrir carrito">Pedido <span data-cart-count>0</span></button>
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
@@ -36,8 +37,9 @@
     <a href="#experiencia">Experiencia</a>
     <a href="#menu">Menú</a>
     <a href="#galeria">Galería</a>
+    <a href="#highlight">#Highlight</a>
     <a href="#visitanos">Visítanos</a>
-    <a class="btn btn-gold" href="https://wa.me/584249372501?text=Hola%20Jai%20Alai%2C%20quisiera%20consultar%20sobre%20delivery." target="_blank" rel="noreferrer">Pedir por delivery</a>
+    <button class="btn btn-gold" type="button" data-open-cart>Ver pedido · <span data-cart-count>0</span></button>
   </aside>
 
   <main>
@@ -48,7 +50,7 @@
         <span class="eyebrow">TASCA · RESTAURANT · CIUDAD GUAYANA</span>
         <img class="hero-logo" src="assets/logo-jai-alai.png" alt="Jai Alai Tasca - Restaurant" />
         <h1>Una mesa para <em>disfrutar</em> sin prisa.</h1>
-        <p>Descubre nuestro menú, revisa los horarios y llega directo a Jai Alai. También puedes consultar delivery por WhatsApp.</p>
+        <p>Descubre nuestro menú, revisa los horarios y llega directo a Jai Alai. También puedes armar tu pedido en línea y confirmarlo directamente por WhatsApp.</p>
         <div class="hero-actions">
           <a class="btn btn-gold" href="#menu">Ver menú</a>
           <a class="btn btn-outline" href="https://maps.app.goo.gl/3vi7jd1GspENjZVn8" target="_blank" rel="noreferrer">Cómo llegar</a>
@@ -94,7 +96,12 @@
           <span class="eyebrow dark">¿LO QUIERES EN CASA?</span>
           <h3>Consulta tu pedido por delivery.</h3>
         </div>
-        <a class="btn btn-gold" href="https://wa.me/584249372501?text=Hola%20Jai%20Alai%2C%20quisiera%20hacer%20un%20pedido%20por%20delivery." target="_blank" rel="noreferrer">Abrir WhatsApp</a>
+        <button class="btn btn-gold" type="button" data-open-cart>Revisar mi pedido <span class="btn-count" data-cart-count>0</span></button>
+      </div>
+      <div class="order-how reveal">
+        <div><span>01</span><strong>Elige tus platos</strong><p>Agrega al carrito lo que quieras pedir y ajusta las cantidades.</p></div>
+        <div><span>02</span><strong>Revisa el total</strong><p>La web calcula el monto de los platos automáticamente.</p></div>
+        <div><span>03</span><strong>Confirma por WhatsApp</strong><p>El pago se coordina directamente con Jai Alai; no se cobra dentro de esta web.</p></div>
       </div>
     </section>
 
@@ -110,6 +117,26 @@
         <figure class="reveal"><img src="assets/photos/jai-01.jpg" alt="Pan de ajo" loading="lazy"><figcaption>Para compartir</figcaption></figure>
         <figure class="reveal delay-1"><img src="assets/photos/jai-07.jpg" alt="Mariscos de Jai Alai" loading="lazy"><figcaption>Mariscos</figcaption></figure>
         <figure class="g-wide reveal delay-2"><img src="assets/photos/jai-02.jpg" alt="Salón de Jai Alai" loading="lazy"><figcaption>Nuestro espacio</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section highlight-section" id="highlight">
+      <div class="highlight-heading reveal">
+        <div>
+          <span class="eyebrow dark">#HIGHLIGHT · JAI ALAI</span>
+          <h2>Momentos que también <em>son parte del menú.</em></h2>
+        </div>
+        <p>Una ventana a las visitas, mesas y platos que nuestros clientes convierten en recuerdos. Toca una foto para verla completa.</p>
+      </div>
+      <div class="highlight-rail reveal delay-1" aria-label="Momentos destacados de Jai Alai">
+        <button class="highlight-card tall" type="button" data-caption="#highlight · Una mesa para compartir"><img src="assets/photos/jai-08.jpg" alt="Plato de mariscos servido en Jai Alai" loading="lazy"><span>#highlight</span><b>Para compartir</b></button>
+        <button class="highlight-card" type="button" data-caption="#highlight · Parrilla Jai Alai"><img src="assets/photos/jai-09.jpg" alt="Parrilla servida en una mesa de Jai Alai" loading="lazy"><span>#highlight</span><b>Parrilla & amigos</b></button>
+        <button class="highlight-card" type="button" data-caption="#highlight · Sabor de la casa"><img src="assets/photos/jai-12.jpg" alt="Plato de arroz con mariscos de Jai Alai" loading="lazy"><span>#highlight</span><b>Sabor de la casa</b></button>
+        <button class="highlight-card tall" type="button" data-caption="#highlight · Un favorito de la mesa"><img src="assets/photos/jai-10.jpg" alt="Platos fotografiados durante una visita a Jai Alai" loading="lazy"><span>#highlight</span><b>Tu foto, nuestro highlight</b></button>
+      </div>
+      <div class="highlight-footer reveal">
+        <p>¿Tienes una foto en Jai Alai? Etiqueta al restaurante en Instagram para que pueda formar parte de próximos <strong>#highlight</strong>.</p>
+        <a class="btn btn-dark" href="https://www.instagram.com/jaialai_restaurant" target="_blank" rel="noreferrer">Ir a Instagram</a>
       </div>
     </section>
 
@@ -155,8 +182,47 @@
 
   <div class="mobile-action-bar">
     <a href="#menu">Menú</a>
-    <a class="primary" href="https://wa.me/584249372501?text=Hola%20Jai%20Alai%2C%20quisiera%20hacer%20un%20pedido%20por%20delivery." target="_blank" rel="noreferrer">Delivery</a>
+    <button class="primary" type="button" data-open-cart>Pedido <span data-cart-count>0</span></button>
     <a href="https://maps.app.goo.gl/3vi7jd1GspENjZVn8" target="_blank" rel="noreferrer">Llegar</a>
+  </div>
+
+  <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Tu pedido">
+    <div class="cart-head">
+      <div><span class="eyebrow dark">TU PEDIDO</span><h2>Carrito Jai Alai</h2></div>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-scroll">
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary">
+        <div><span>Subtotal de platos</span><strong id="cartTotal">$0.00</strong></div>
+        <p>El delivery, disponibilidad y pago se confirman directamente por WhatsApp.</p>
+      </div>
+      <form class="order-form" id="orderForm">
+        <div class="order-form-title"><span>Datos para la orden</span><button type="button" id="clearCart">Vaciar carrito</button></div>
+        <label>Nombre <input id="customerName" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required></label>
+        <label>Teléfono <input id="customerPhone" name="phone" type="tel" autocomplete="tel" placeholder="Ej. 0424 000 0000" required></label>
+        <label>¿Cómo quieres recibirlo?
+          <select id="orderType" name="type">
+            <option value="pickup">Retiro en el local</option>
+            <option value="delivery">Delivery</option>
+          </select>
+        </label>
+        <div id="deliveryFields" hidden>
+          <label>Dirección de entrega <textarea id="customerAddress" name="address" rows="2" placeholder="Sector, calle, referencia..."></textarea></label>
+        </div>
+        <label>Observaciones <textarea id="customerNotes" name="notes" rows="3" placeholder="Ej. sin cebolla, punto de cocción, referencia..."></textarea></label>
+        <div class="payment-note"><span>Pago</span><strong>Se coordina con la dueña por WhatsApp</strong><p>Esta página no solicita datos bancarios ni procesa pagos en línea.</p></div>
+        <button class="btn btn-whatsapp" type="submit">Generar pedido y avisar por WhatsApp</button>
+      </form>
+    </div>
+  </aside>
+
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite"><i>✓</i><span>Agregado al pedido</span></div>
+
+  <div class="highlight-lightbox" id="highlightLightbox" aria-hidden="true">
+    <button id="highlightClose" type="button" aria-label="Cerrar foto">×</button>
+    <div><img src="" alt=""><p>#highlight Jai Alai</p></div>
   </div>
 
   <script src="app.js"></script>
