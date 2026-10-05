@@ -1,0 +1,18 @@
+JAI ALAI — PASOS CORTOS PARA CLOUDFLARE
+
+1) Esta versión NO se sube con “Upload static files”. Necesita backend para ocultar el token de Meta.
+2) Descomprime el ZIP.
+3) Abre PowerShell dentro de la carpeta.
+4) Ejecuta:
+   npm install
+   npx wrangler login
+   npx wrangler secret put META_ACCESS_TOKEN
+   (pega el token largo de Meta cuando te lo pida)
+   npm run deploy
+5) Abre tu misma URL demo-jai-alai y prueba Instagram + tasa BCV.
+
+PRUEBAS:
+- https://TU-DOMINIO/api/instagram
+- https://TU-DOMINIO/api/bcv
+
+Si /api/instagram dice configured:false, todavía falta guardar el token de Meta.
